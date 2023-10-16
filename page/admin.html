@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Quản Lý</title>
+    <link rel="shortcut icon" href="../assets/images/favicon (2) 23.57.39.ico" type="image/png">
+    <link rel="stylesheet" href="../css/vendor/vendor.min.css">
+    <link rel="stylesheet" href="../css/plugins/plugins.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+    <!-- Start Header Area -->
+    <header class="header-section d-none d-xl-block">
+        <div class="header-wrapper">
+            <div class="header-bottom header-bottom-color--golden section-fluid sticky-header sticky-color--golden">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 d-flex align-items-center justify-content-between">
+                            <!-- Start Header Logo -->
+                            <div class="header-logo">
+                                <div class="logo">
+                                    <a href="./index.html"><img src="../assets/images/logo/logo_preview_rev_1.png"
+                                            alt=""></a>
+                                </div>
+                            </div>
+            <div class="main-menu menu-color--black menu-hover-color--golden">
+                <nav>
+                    <ul>
+                        <li class="has-dropdown">
+                            <a class="active main-menu-link" href="./admin.html">Ngạnh13<i
+                                    class="fa fa-angle-down"></i></a>
+                            <!-- Sub Menu -->
+                            <ul class="sub-menu">
+                                <li><a href="./admin.html">Quản Lý Người Dùng</a></li>
+                                <li><a href="./admin-productlist.html">Quản Lý Sản Phẩm</a></li>
+                                <li><a href="#">Doanh Số / Lợi Nhuận</a></li>
+                                <li><a href="#">Đơn Bị Hoàn </a></li>
+                                <li><a href="#">Khiếu Nại </a></li>                           
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        
+            <div class="breadcrumb-section breadcrumb-bg-color--golden">
+                <div class="breadcrumb-wrapper">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <h3 class="breadcrumb-title">Quản Lý Website</h3>
+                                <div class="breadcrumb-nav breadcrumb-nav-color--black breadcrumb-nav-hover-color--golden">
+                                    <nav aria-label="breadcrumb">
+                                        <ul>
+                                            <li><a href="./admin.html">Các Mục</a></li>
+                                            <li class="active" aria-current="page">Quản Lý Người Dùng</li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div
+
+            <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4"
+                aria-hidden="true">
+                <h3 class="modal-title fs-5" id="exampleModalLabel">Danh Sách Khách Hàng</h3>
+                <table class="table table-striped" id="table-list">
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>ID</th>
+                            <th>Tên</th>
+                            <th>Email</th>
+                            <th>Vai Trò</th>
+                            <th>Trạng Thái</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody">
+                <!-- <tr>
+                    <td>1</td>
+                    <td>007</td>
+                    <td>ngọc anh</td>
+                    <td>nganhnganngan@gmail.com</td>
+                    <td>user</td>
+                    <td><button>block</button><button>Xoá Tài Khoản</button></td>
+                </tr> -->
+            </div>
+                    </tbody>
+                </table>
+                <div class="modal-dialog">
+                    <div class="modal-content" onclick="registerNow">
+                        <div class="modal-header">
+                            <h3 class="modal-title fs-5" id="exampleModalLabel">Đăng Ký Tài Khoản Trực Tiếp</h3>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <label for="">Email hoặc Tên Đăng Nhập</label> <br>
+                            <input type="email" id="email"> <br>
+                            <label for="">Tên</label> <br>
+                            <input type="text" id="name"> <br>
+                            <label for="">Mật Khẩu</label> <br>
+                            <input type="password" id="password"><br>
+                            <label for="">Xác Nhận Lại Mật Khẩu</label> <br>
+                            <input type="password" id="confirmPassword">
+                            <p class="error"> Nhập sai trường nào đó </p>
+                            <button class="button" onclick="register()">register</button>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Huỷ</button>
+                            <button type="button" class="btn btn-primary">Lưu Lại</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+
+
+            <script src="../js/admin.js"></script>
+
+
+</body>
+
+</html>

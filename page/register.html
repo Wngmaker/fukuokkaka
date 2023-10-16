@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng Ký Tài Khoản</title>
+    <link rel="shortcut icon" href="../assets/images/favicon (2) 23.57.39.ico" type="image/png">
+    <link rel="stylesheet" href="../css/lo-gister.css">
+   
+</head>
+<body>
+    <div class="register">
+		<header>Đăng Ký Tài Khoản</header>
+		<form>
+			<div class="input-field">
+				<input type="text" id="email" required>
+				<label for="" >Email</label>
+			</div>
+            <div class="input-field">
+				<input type="text" id="name" required>
+				<label for="" >Tên</label>
+			</div>
+			<div class="input-field">
+				<input class="pswrd" type="password" id="password" required>
+				<label for="" >Mật Khẩu</label>
+			</div>
+            <div class="input-field">
+				<input class="pswrd" type="password" id="confirmPassword" required>
+				<label for="" > Xác Nhận Mật Khẩu</label>
+			</div>
+            <p  class="error"> Đã Có Lỗi Xảy Ra </p>
+			<div class="button">
+				<div class="inner">
+				</div>
+				<div class="button">
+					<button class="btn-hover color-7" onclick="register()" >Đăng Ký</button>
+				</div>
+			</div>
+            <p>Bạn có tài khoản rồi <a href="./login.html">Quay Lại Đăng Nhập</a></p>
+		</form>
+		
+    <script src="../js/register.js"></script>
+</body>
+
+</html>
